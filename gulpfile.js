@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 
 
 const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 const del = require("del");
 
@@ -42,7 +43,9 @@ gulp.task("images", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml())
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 });
 
@@ -51,7 +54,8 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/*.html"
   ], {
     base: "source"
   })
