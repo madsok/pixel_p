@@ -1,3 +1,15 @@
 .header {
+  width: 100%;
+  background-color: rgba(220, 220, 220, 1);
+}
 
+.header__content {
+  padding-top: 36px;
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__contacts {
+  position: relative;
 }
