@@ -4,12 +4,12 @@
 }
 
 .header__content {
-  padding-top: 36px;
-  padding-bottom: 65px;
+  padding: 36px 10px 65px 10px;
   display: flex;
   justify-content: space-between;
 }
 
 .header__contacts {
   position: relative;
+  flex-shrink: 0;
 }
