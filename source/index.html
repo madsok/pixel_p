@@ -37,11 +37,19 @@
     <main>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slider__item">
-          <img class="slider__img" src="img/slayd_1_254.png" width="1248" height="462" alt="Первый слайд">
-        </div>
-        <div class="slider__item">
-          <img class="slider__img" src="/img/slayd_2_188.png" width="1248" height="462" alt="Второй слайд">
+        <div class="slider__wrapper">
+          <div class="slider__item slider__item--first">
+            <img class="slider__img" src="img/slayd_1_254.png" width="1248" height="462" alt="Первый слайд">
+          </div>
+          <div class="slider__item slider__item--second">
+            <img class="slider__img" src="/img/slayd_2_188.png" width="1248" height="462" alt="Второй слайд">
+          </div>
+          <a class="btn-prev" href="#">
+            <span class="btn-prev__arrow btn-prev__arrow--left"></span>
+          </a>
+          <a class="btn-next" href="#">
+            <span class="btn-next__arrow btn-next__arrow--right"></span>
+          </a>
         </div>
       </section>
       <section class="catalog">
