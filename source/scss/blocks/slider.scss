@@ -24,6 +24,10 @@
   animation: fade2 4s infinite;
 }
 
+.slider__img {
+  display: block;
+}
+
 @keyframes fade
 {
   0%   {opacity:1}

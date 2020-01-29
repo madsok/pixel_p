@@ -41,3 +41,28 @@
   display: none;
   padding-right: 0;
 }
+
+.nav--breadcrumbs {
+  background: none;
+}
+
+.nav__list--breadcrumbs {
+  padding: 10px 10px;
+  justify-content: flex-start;
+}
+
+.nav__item--breadcrumb {
+  padding-right: 5px;
+}
+
+.nav__item--breadcrumb::after {
+  display: none;
+}
+
+.nav__link--font {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: rgba(118, 118, 118, 1);
+}
