@@ -1,0 +1,31 @@
+.sidebar__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 102px;
+  width: 181px;
+  list-style: none;
+}
+
+.sidebar__item {
+  position: relative;
+}
+
+.sidebar__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: rgba(118, 118, 118, 1);
+}
+
+.sidebar__sublist {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.sidebar__link--active {
+  text-decoration: underline;
+}

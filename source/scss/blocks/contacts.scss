@@ -3,7 +3,7 @@
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 40px;
   line-height: 46px;
-  letter-spacing: 1px;
+  letter-spacing: 0.025em;
   font-weight: 300;
   text-align: right;
 }
@@ -15,16 +15,9 @@
   display: inline-block;
   font-size: 24px;
   line-height: 46px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.025em;
   font-weight: 700;
   color: rgba(118, 118, 118, 1);
-}
-
-.contacts__link::after {
-  position: absolute;
-  content: "";
-  bottom: 8px;
-  left: 0;
-  width: 100%;
-  border-bottom: 2px dashed rgba(118, 118, 118, 1);
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
