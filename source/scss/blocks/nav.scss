@@ -104,10 +104,15 @@
 }
 
 .nav__list--footer {
+  margin-right: 285px;
   padding: 0;
-  width: 185px;
+  width: 120px;
   display: flex;
   flex-direction: column;
+}
+
+.nav__item--footer {
+  padding-right: 0;
 }
 
 .nav__item--footer::after {

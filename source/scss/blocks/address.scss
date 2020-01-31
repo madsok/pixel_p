@@ -1,3 +1,12 @@
 .address__text {
-  color: #ffffff;
+  margin: 0;
+  width: 200px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+}
+
+.address__link {
+  display: inline-block;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
 }

@@ -1,0 +1,24 @@
+.dev-info {
+  display: flex;
+}
+
+.dev-info__logo {
+  padding-top: 5px;
+}
+
+.dev-info__img {
+  margin-right: 10px;
+  width: 36px;
+  height: 38px;
+}
+
+.dev-info__text {
+  margin: 0;
+  width: 180px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.dev-info__underline {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+}

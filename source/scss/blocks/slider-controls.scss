@@ -1,4 +1,4 @@
-.btn-prev {
+.slider-controls__prev {
   padding: 20px 12px;
   position: absolute;
   top: 155px;
@@ -9,7 +9,7 @@
   background-color: rgba(209, 209, 209, 1);
 }
 
-.btn-next {
+.slider-controls__next {
   padding: 20px 2px;
   position: absolute;
   top: 155px;
@@ -20,17 +20,17 @@
   background-color: rgba(209, 209, 209, 1);
 }
 
-.btn-prev__arrow, .btn-next__arrow {
+.prev__arrow, .next__arrow {
   padding: 9px;
   display: inline-block;
   border: solid black;
   border-width: 0 3px 3px 0;
 }
 
-.btn-prev__arrow--left {
+.prev__arrow--left {
   transform: rotate(135deg);
 }
 
-.btn-next__arrow--right {
+.next__arrow--right {
   transform: rotate(-45deg);
 }

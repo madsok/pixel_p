@@ -44,12 +44,14 @@
           <div class="slider__item slider__item--second">
             <img class="slider__img" src="/img/slayd_2_188.jpg" width="1248" height="462" alt="Второй слайд">
           </div>
-          <a class="btn-prev" href="#">
-            <span class="btn-prev__arrow btn-prev__arrow--left"></span>
-          </a>
-          <a class="btn-next" href="#">
-            <span class="btn-next__arrow btn-next__arrow--right"></span>
-          </a>
+          <div class="slider-controls">
+            <a class="slider-controls__prev" href="#">
+              <span class="prev__arrow prev__arrow--left"></span>
+            </a>
+            <a class="slider-controls__next" href="#">
+              <span class="next__arrow next__arrow--right"></span>
+            </a>
+          </div>
         </div>
       </section>
       <nav class="nav nav--breadcrumbs index__nav--breadcrumbs">
@@ -178,7 +180,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <address class="address">
+          <address class="address footer__address">
             <p class="address__text">© 2012–2013 ЗАО «Компания»</p>
             <a class="address__link" href="mailto:info@name.ru">info@name.ru</a>
           </address>
@@ -191,9 +193,11 @@
               <li class="nav__item nav__item--footer"><a class="nav__link nav__link--footer" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <div class="site-dev-info">
-            <img class="site-dev-info__logo" src="/img/company_74.png" width="36" height="38" alt="Логотип компании-разработчика сайта">
-            <p class="site-dev-info__text">Разработка сайта — <br>
+          <div class="dev-info">
+            <div class="dev-info__logo">
+              <img class="dev-info__img" src="/img/company_74.png" width="36" height="38" alt="Логотип компании-разработчика сайта">
+            </div>
+            <p class="dev-info__text"><span class="dev-info__underline">Разработка сайта</span> — <br>
               компания «Пиксель Плюс»
             </p>
           </div>
@@ -225,10 +229,11 @@
           <label class="message__label" for="message">
             Сообщение
           </label>
-          <textarea class="message__input" id="message" name="message" rows="8" cols="80"></textarea>
+          <textarea class="message__input" id="message" name="message" rows="8" cols="45"></textarea>
         </div>
-        <button class="btn" type="button" name="button">Отправить</button>
+        <button class="btn" type="submit" name="button">Отправить</button>
       </form>
+      <button class="modal__close" type="button">Закрыть</button>
     </div>
   </body>
 </html>
