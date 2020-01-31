@@ -204,36 +204,38 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <form class="modal__form" action="index.html" method="post">
-        <h3>Обратная связь</h3>
-        <div class="name">
-          <label class="name__label" for="name">
-            Ваше имя *
-          </label>
-          <input class="name__input" id="name" type="text" name="name" required>
-        </div>
-        <div class="tel">
-          <label class="tel__label" for="tel">
-            Телефон *
-          </label>
-          <input class="tel__input" id="tel" type="tel" name="tel" required>
-        </div>
-        <div class="email">
-          <label class="email__label" for="email">
-            Email *
-          </label>
-          <input class="email__input" id="email" type="email" name="email" required>
-        </div>
-        <div class="message">
-          <label class="message__label" for="message">
-            Сообщение
-          </label>
-          <textarea class="message__input" id="message" name="message" rows="8" cols="45"></textarea>
-        </div>
-        <button class="btn" type="submit" name="button">Отправить</button>
-      </form>
-      <button class="modal__close" type="button">Закрыть</button>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <form class="modal__form" action="index.html" method="post">
+          <h3 class="modal__title">Обратная связь</h3>
+          <div class="modal__content">
+            <label class="modal__label" for="name">
+              Ваше имя *
+            </label>
+            <input class="modal__input" id="name" type="text" name="name" required>
+          </div>
+          <div class="modal__content">
+            <label class="modal__label" for="tel">
+              Телефон *
+            </label>
+            <input class="modal__input" id="tel" type="tel" name="tel" required>
+          </div>
+          <div class="modal__content">
+            <label class="modal__label" for="email">
+              Email *
+            </label>
+            <input class="modal__input" id="email" type="email" name="email" required>
+          </div>
+          <div class="modal__content">
+            <label class="modal__label" for="message">
+              Сообщение
+            </label>
+            <textarea class="modal__input modal__input--height" id="message" name="message"></textarea>
+          </div>
+          <button class="btn" type="submit" name="button">Отправить</button>
+        </form>
+        <button class="modal__close" type="button">Закрыть</button>
+      </div>
     </div>
   </body>
 </html>

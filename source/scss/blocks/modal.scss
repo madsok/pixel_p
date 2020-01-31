@@ -1,7 +1,18 @@
+.modal-wrapper  {
+  padding-top: 285px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.5);
+}
+
 .modal {
-  position: absolute;
-  top: 285px;
-  left: 481px;
+  position: relative;
+  margin: 0 auto;
   padding: 32px 63px 26px;
   width: 466px;
   height: 578px;
@@ -11,7 +22,7 @@
 .modal__close {
   position: absolute;
   top: -27px;
-  right: 0;
+  right: -27px;
   width: 27px;
   height: 27px;
   font-size: 0;
@@ -23,8 +34,8 @@
 .modal__close::before,
 .modal__close::after {
   position: absolute;
-  top: 10px;
-  right: 2px;
+  top: 12px;
+  right: 4px;
   content: "";
   width: 19px;
   height: 3px;
@@ -37,4 +48,48 @@
 
 .modal__close::after {
   transform: rotate(-45deg);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 2px 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(83, 83, 83, 1);
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__label {
+  padding: 1px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(83, 83, 83, 1);
+}
+
+.modal__input {
+  padding: 13px;
+  width: 340px;
+  height: 40px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid rgba(195, 195, 195, 1);
+}
+
+.modal__input--height {
+  height: 140px;
 }
