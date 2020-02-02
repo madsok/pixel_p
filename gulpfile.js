@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const server = require("browser-sync").create();
+const jsmin = require("gulp-jsmin");
 const rename = require("gulp-rename");
 const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
@@ -49,6 +50,14 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(jsmin())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -77,6 +86,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/scss/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("js"));
 });
 
 gulp.task("refresh", function (done) {
@@ -84,5 +94,5 @@ server.reload();
 done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "images", "html"));
 gulp.task("start", gulp.series("build", "server"));
