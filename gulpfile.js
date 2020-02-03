@@ -9,6 +9,8 @@ const jsmin = require("gulp-jsmin");
 const rename = require("gulp-rename");
 const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
+const ghPages = require('gh-pages');
+const path = require('path');
 
 
 const posthtml = require("gulp-posthtml");
@@ -75,6 +77,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -96,3 +99,8 @@ done();
 
 gulp.task("build", gulp.series("clean", "copy", "css", "js", "images", "html"));
 gulp.task("start", gulp.series("build", "server"));
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
