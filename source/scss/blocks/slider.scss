@@ -1,12 +1,14 @@
-.slider {
-  background-color: rgba(248, 248, 248, 1);
-}
-
 .slider__wrapper {
   position: relative;
   overflow: hidden;
   max-width: 100%;
   min-height: 462px;
+}
+
+.slider__slider-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slider__item {

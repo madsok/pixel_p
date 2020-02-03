@@ -1,8 +1,14 @@
+.slider-controls {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
 .slider-controls__prev {
   padding: 20px 12px;
   position: absolute;
-  top: 155px;
-  left: 210px;
+  top: 30%;
+  left: 20%;
   display: inline-block;
   width: 34px;
   height: 61px;
@@ -12,8 +18,8 @@
 .slider-controls__next {
   padding: 20px 2px;
   position: absolute;
-  top: 155px;
-  right: 210px;
+  top: 30%;
+  right: 20%;
   display: inline-block;
   width: 34px;
   height: 61px;

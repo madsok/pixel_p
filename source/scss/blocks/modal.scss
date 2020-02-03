@@ -13,6 +13,7 @@
 
 .modal-wrapper--active {
   display: block;
+  animation: fade3 2s;
 }
 
 .modal {
@@ -102,5 +103,16 @@
 
 .modal__input--invalid:invalid {
   border-color: rgb(255, 131, 131);
-  box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
+}
+
+.modal__input--invalid::placeholder {
+  font-style: italic;
+  color: #dc7f7f;
+}
+
+
+@keyframes fade3
+{
+  0%   {opacity:0}
+  100% { opacity: 1}
 }
