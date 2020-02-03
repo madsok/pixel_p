@@ -47,7 +47,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.nav__link:before {
+.nav__link::before {
   position: absolute;
   bottom: 0;
   display: none;
@@ -57,7 +57,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.nav__link:hover.nav__link:before   {
+.nav__link:hover.nav__link::before {
   display: block;
 }
 
@@ -127,7 +127,7 @@
   color: #ffffff;
 }
 
-.nav__link--footer:before {
+.nav__link--footer::before {
   position: absolute;
   bottom: 5px;
   display: block;

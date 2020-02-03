@@ -18,7 +18,6 @@
         "number-leading-zero": "always",
         "function-url-quotes": "always",
         "font-weight-notation": "numeric",
-        "rule-empty-line-before": "always",
         "selector-pseudo-element-colon-notation": "double",
         "selector-pseudo-class-parentheses-space-inside": "never",
         "media-feature-range-operator-space-before": "never",
